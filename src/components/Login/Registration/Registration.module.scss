@@ -1,0 +1,163 @@
+.Registration {
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto;
+    color: #121212;
+
+    &-Title {
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+    &-Form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-Label {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    &-Input {
+        width: 100%;
+        border: 1px solid #6D6D6D;
+        background-color: transparent;
+        height: 40px;
+        padding: 0 10px;
+        
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: #121212;
+
+        &::placeholder {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #6D6D6D;
+        }
+
+        &:active, &:focus {
+            border: 1px solid #121212;
+        }
+    }
+
+    &-Info {
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #6D6D6D;
+        
+        &_link {
+            text-decoration-line: underline;
+            cursor: pointer;
+        }
+    }
+
+    &-Button {
+        height: 45px;
+        background-color: #121212;
+        border: none;
+        
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        line-height: 45px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #FAFAFA;
+
+        &-google, &-facebook {
+            background-color: transparent;
+            border: 1px solid #6D6D6D;
+            width: 100%;
+            max-width: 176px;
+            height: 48px;
+            cursor: pointer;
+
+            @media screen and (max-width: 600px) {
+                font-size: 0;
+            }
+        }
+
+        &-google {
+            margin-right: 15px;
+        }
+
+        &-facebook {
+
+        }
+    }
+
+    &-LoginBox {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0 30px 0;
+
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #121212;
+    }
+
+    &-Link {
+        color: #121212;
+    }
+
+    &-DecorLine {
+        position: relative;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #DEDEDE;
+        font-size: 14px;
+        line-height: 21px;
+
+        &:after, &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            max-width: 165px;
+            height: 1px;
+            background-color: #DEDEDE;
+            top: 50%;
+        }
+
+        &:after {
+            right: 0;
+        }
+
+        &:before {
+            left: 0;
+        }
+    }
+
+    
+    &-Social {
+        display: flex;
+        justify-content: space-between;
+
+        padding-bottom: 50px;
+    }
+
+    &-SocialIcon {
+        margin-right: 15px;
+    }
+    
+    &-PasswordIcon {
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        cursor: pointer;
+    }
+}

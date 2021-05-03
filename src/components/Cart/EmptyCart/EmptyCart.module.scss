@@ -1,0 +1,30 @@
+.EmptyCart {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 368px;
+    margin: 0 auto;
+
+    &-Icon {
+        width: 50px;
+        height: 80px;
+        align-self: center;
+        margin-bottom: 25px;
+    }
+
+    &-Link {
+        margin-top: 45px;
+        background-color: #121212;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: #FAFAFA;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
