@@ -5,6 +5,7 @@ import { productsInCartReducer } from "./productsInCartReducer"
 import { loginReducer } from "./loginReducer"
 import { resetPasswordReducer } from "./resetPasswordReducer"
 import { registrationReducer } from "./registrationReducer"
+import { searchReducer } from "./searchReducer";
 
 
 export const rootReducer = combineReducers({
@@ -13,4 +14,5 @@ export const rootReducer = combineReducers({
     loginForm: loginReducer,
     registrationForm: registrationReducer,
     resetPassword: resetPasswordReducer,
+    search: searchReducer
 });

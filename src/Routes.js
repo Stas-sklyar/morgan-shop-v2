@@ -14,6 +14,7 @@ import RecoveryPassword from "./components/Login/RecoveryPassword/RecoveryPasswo
 import OrderSuccessful from "./components/Cart/OrderSuccessful/OrderSuccessful";
 import ResetPasswordSuccessful from "./components/Login/RecoveryPassword/ResetPasswordSuccessful/ResetPasswordSuccessful";
 import ProductItem from "./components/ProductItem/ProductItem";
+import Search from "./components/Search/Search";
 
 const Routes = () => {
 
@@ -33,6 +34,9 @@ const Routes = () => {
             </Route>
             <Route path="/interior-ceiling" exact>
                 <InteriorCeiling />
+            </Route>
+            <Route path="/search" exact>
+                <Search />
             </Route>
             <Route path="/product/:id">
                 <ProductItem />

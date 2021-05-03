@@ -43,3 +43,9 @@ export const handleFormChangeResetPassword = (value) => ({
     type: "RESET_PASSWORD_HANDLE_FORM_CHANGE",
     payload: value,
 })
+
+
+export const handleSearchInput = (query) => ({
+    type: "HANDLE_SEARCH_INPUT",
+    payload: query
+})

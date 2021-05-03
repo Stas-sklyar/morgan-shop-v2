@@ -18,7 +18,9 @@ const HeaderIcons = ({ productsInCart }) => {
         <>
             <ul className={s["Header-Menu"]}>
                 <li className={s["Header-Icon"] + " " + s["Header-Icon_search"]}>
-                    <img src={searchIcon} alt="search" />
+                    <NavLink to="/search" activeClassName={s["Header-Icon_active"]}>
+                        <img src={searchIcon} alt="search" />
+                    </NavLink>
                 </li>
                 <li className={s["Header-Icon"] + " " + s["Header-Icon_login"]}>
                     <NavLink to="/login" activeClassName={s["Header-Icon_active"]}>
@@ -35,9 +37,11 @@ const HeaderIcons = ({ productsInCart }) => {
                     </span>
                 </li>
             </ul>
-            {cartOpen ? (
-                <div onClick={() => setCartOpen(false)} className={s["Header-WrappForModal"]}></div>
-            ) : null}
+            {
+                cartOpen ? (
+                    <div onClick={() => setCartOpen(false)} className={s["Header-WrappForModal"]}></div>
+                ) : null
+            }
         </>
     )
 }

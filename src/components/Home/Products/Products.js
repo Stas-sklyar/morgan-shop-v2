@@ -73,7 +73,7 @@ const Products = ({ targetSort, productsInCart }) => {
                         (amountShowProd > index) ? (
                             <div key={id} className={s["Products-Product"] + " " + s.Product} styles={{ display: (amountShowProd > index) ? "block" : "none" }}>
                                 <Link to={"/product/" + id}><img className={s["Product-Img"]} src={host + image} alt={name} /></Link>
-                                <Link to={"/product/" + id} className={s["Product-Name"]}><span>{alias}</span></Link>
+                                <Link to={"/product/" + id} className={s["Product-Name"]}><span>{name}</span></Link>
                                 <span className={s["Product-Price"]}>{"£" + price + ".00"}</span>
                                 <img id={id} onClick={(prodInCart(id)) ? removeProductWithCart : addProductToCart} className={s["Product-AddProductIcon"]}
                                     src={(prodInCart(id)) ? removeProductIcon : addProductIcon} alt="icon" />
