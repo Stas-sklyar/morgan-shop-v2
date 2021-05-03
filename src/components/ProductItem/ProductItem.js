@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 
 import { useGetProducts } from "../../customHooks/useGetProducts"
 import s from "./ProductItem.module.scss"
+import Loader from "react-loader-spinner";
 
 import { useParams } from "react-router-dom"
 
@@ -65,7 +66,18 @@ const ProductsItem = ({ productsInCart }) => {
                 </div>
             }
 
-            <h2 className={s["ProductItem-Title"]}>Similar products</h2>
+            {
+                !products &&
+                <Loader
+                    type="Oval"
+                    color="#00BFFF"
+                    height={100}
+                    width={100}
+                    style={{ textAlign: "center" }}
+                />
+            }
+
+            <h2 className={s["ProductItem-Title"]}>View other products</h2>
             <SameProducts />
 
         </>

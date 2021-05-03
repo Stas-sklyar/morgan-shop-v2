@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { connect } from "react-redux"
 import { useDispatch } from "react-redux"
 import { Link } from "react-router-dom"
@@ -59,7 +59,7 @@ const SameProducts = ({ targetSort, productsInCart }) => {
                                 <div onClick={openNewProduct}>
                                     <Link to={"/product/" + id}><img className={s["Product-Img"]} src={host + image} alt={name} /></Link>
                                 </div>
-                                <span className={s["Product-Name"]}>{alias}</span>
+                                <Link onClick={openNewProduct} to={"/product/" + id} className={s["Product-Name"]}><span>{alias}</span></Link>
                                 <span className={s["Product-Price"]}>{"£" + price + ".00"}</span>
                                 <img id={id} onClick={(prodInCart(id)) ? removeProductWithCart : addProductToCart} className={s["Product-AddProductIcon"]}
                                     src={(prodInCart(id)) ? removeProductIcon : addProductIcon} alt="icon" />

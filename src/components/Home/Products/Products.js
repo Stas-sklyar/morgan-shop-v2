@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux"
 import { Link } from "react-router-dom"
 
 import s from "../../Products.module.scss"
+import Loader from "react-loader-spinner";
 
 import { useGetProducts } from "../../../customHooks/useGetProducts"
 
@@ -72,12 +73,22 @@ const Products = ({ targetSort, productsInCart }) => {
                         (amountShowProd > index) ? (
                             <div key={id} className={s["Products-Product"] + " " + s.Product} styles={{ display: (amountShowProd > index) ? "block" : "none" }}>
                                 <Link to={"/product/" + id}><img className={s["Product-Img"]} src={host + image} alt={name} /></Link>
-                                <span className={s["Product-Name"]}>{alias}</span>
+                                <Link to={"/product/" + id} className={s["Product-Name"]}><span>{alias}</span></Link>
                                 <span className={s["Product-Price"]}>{"£" + price + ".00"}</span>
                                 <img id={id} onClick={(prodInCart(id)) ? removeProductWithCart : addProductToCart} className={s["Product-AddProductIcon"]}
                                     src={(prodInCart(id)) ? removeProductIcon : addProductIcon} alt="icon" />
                             </div>) : null
                     ))
+                }
+                {
+                    !productsFromHook &&
+                    <Loader
+                        type="Oval"
+                        color="#00BFFF"
+                        height={100}
+                        width={100}
+                        style={{ textAlign: "center" }}
+                    />
                 }
             </div>
 

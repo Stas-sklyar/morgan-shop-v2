@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom"
 import { useGetCategories } from "../../../customHooks/useGetCategories"
 
 import s from "./Categories.module.scss"
+import Loader from "react-loader-spinner";
 
 const Categories = () => {
     const host = "https://morgan-shop.herokuapp.com/"
@@ -20,6 +21,16 @@ const Categories = () => {
                         </NavLink>
                     </div>
                 ))
+            }
+            {
+                !categoriesFromHook &&
+                <Loader
+                    type="Oval"
+                    color="#00BFFF"
+                    height={100}
+                    width={100}
+                    style={{ textAlign: "center" }}
+                />
             }
         </section>
     )

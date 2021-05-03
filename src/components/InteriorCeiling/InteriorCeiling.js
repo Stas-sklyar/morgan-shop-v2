@@ -3,6 +3,7 @@ import { connect } from "react-redux"
 import { useDispatch } from "react-redux"
 
 import s from "../Products.module.scss"
+import Loader from "react-loader-spinner";
 
 import { useGetProducts } from "../../customHooks/useGetProducts"
 
@@ -65,7 +66,7 @@ const InteriorCeiling = ({ targetSort, productsInCart }) => {
                             return (
                                 <div key={id} className={s["Products-Product"] + " " + s.Product}>
                                     <Link to={"/product/" + id}><img className={s["Product-Img"]} src={host + image} alt={name} /></Link>
-                                    <span className={s["Product-Name"]}>{alias}</span>
+                                    <Link to={"/product/" + id} className={s["Product-Name"]}><span>{alias}</span></Link>
                                     <span className={s["Product-Price"]}>{"£" + price + ".00"}</span>
                                     <img id={id} onClick={(prodInCart(id)) ? removeProductWithCart : addProductToCart}
                                         className={s["Product-AddProductIcon"]}
@@ -73,6 +74,17 @@ const InteriorCeiling = ({ targetSort, productsInCart }) => {
                                 </div>
                             )
                         })
+                }
+
+                {
+                    !productsFromHook &&
+                    <Loader
+                        type="Oval"
+                        color="#00BFFF"
+                        height={100}
+                        width={100}
+                        style={{ textAlign: "center" }}
+                    />
                 }
             </div>
 

@@ -10,7 +10,7 @@ const EmptyCart = () => {
         <div className={s.EmptyCart}>
             <img className={s["EmptyCart-Icon"]} src={emptyBasketIcon} alt="icon" />
             <span>Your basket is empty</span>
-            <NavLink className={s["EmptyCart-Link"]} to={"/ms-hw-build/"}>start shoping</NavLink>
+            <NavLink className={s["EmptyCart-Link"]} to={"/"}>start shoping</NavLink>
         </div>
     )
 }

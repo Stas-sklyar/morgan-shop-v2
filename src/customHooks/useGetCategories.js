@@ -9,10 +9,6 @@ export const useGetCategories = () => {
             .then((categories) => {
                 setCategories(categories.categories)
             })
-            .catch((error) => {
-                alert("something went wrong, please try again later");
-                console.log(error)
-            });
     };
 
     useEffect(() => {
