@@ -23,10 +23,10 @@ const Routes = () => {
             <Route path="/morgan-shop-v2/">
                 <Home />
             </Route>
-            <Route path="/morgan-shop-v2/table-lamps">
+            <Route path="/table-lamps">
                 <TableLamps />
             </Route>
-            <Route path="/floor-lamps" exact>
+            <Route path="/floor-lamps">
                 <FloorLamps />
             </Route>
             <Route path="/exterior-ceiling" exact>
