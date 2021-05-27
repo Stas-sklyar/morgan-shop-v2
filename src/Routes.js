@@ -20,7 +20,7 @@ const Routes = () => {
 
     return (
         <Switch>
-            <Route path="/" exact>
+            <Route path="/">
                 <Home />
             </Route>
             <Route path="/table-lamps" exact>
