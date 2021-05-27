@@ -51,7 +51,7 @@ const ProductInCart = ({ productsInCart }) => {
 
             <Order />
 
-            <NavLink className={s["ProductInCart-Link"]} to="/" >Continue shopping</NavLink>
+            <NavLink className={s["ProductInCart-Link"]} to="/morgan-shop-v2/" >Continue shopping</NavLink>
 
         </div>
     )

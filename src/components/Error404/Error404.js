@@ -10,7 +10,7 @@ const Error404 = () => {
         <div className={s["Error404"]}>
             <img className={s["Error404-Img"]} src={error404Icon} alt="icon" />
             <span className={s["Error404-Label"]}>Sorry, we can't find this page</span>
-            <NavLink className={s["Error404-Link"]} to="/" >home page</NavLink>
+            <NavLink className={s["Error404-Link"]} to="/morgan-shop-v2/" >home page</NavLink>
         </div>
     )
 }

@@ -13,7 +13,7 @@ const HeaderNav = () => {
         <nav className={s["Header-Nav"]}>
             <ul className={s["Header-Menu"]}>
                 <li className={s["Header-Item"]}>
-                    <NavLink to="/">
+                    <NavLink to="/morgan-shop-v2/">
                         <img src={logo} alt="logo" />
                     </NavLink>
                 </li>

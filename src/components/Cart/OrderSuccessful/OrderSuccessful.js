@@ -21,7 +21,7 @@ const OrderSuccessful = () => {
                     <span className={s["OrderSuccessful-NumberOrder_num"]}> 07/12/20</span>
                 </span>
             </div>
-            <NavLink className={s["OrderSuccessful-Link"]} to="/" >CONTINUE SHOPPING</NavLink>
+            <NavLink className={s["OrderSuccessful-Link"]} to="/morgan-shop-v2/" >CONTINUE SHOPPING</NavLink>
         </div >
     )
 }
