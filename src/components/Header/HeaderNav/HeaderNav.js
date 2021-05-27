@@ -21,7 +21,7 @@ const HeaderNav = () => {
                     categoriesFromHook.sort((a, b) => a.menuOrder - b.menuOrder)
                         .map(({ id, title, alias, image, menuOrder }) => (
                             <li key={id} className={s["Header-Item"]}>
-                                <NavLink activeClassName={s["Header-Item_active"]} to={'/' + 'morgan-shop-v2/' + alias}>{title}</NavLink>
+                                <NavLink activeClassName={s["Header-Item_active"]} to={'/' + alias}>{title}</NavLink>
                             </li>
                         ))
                 }
