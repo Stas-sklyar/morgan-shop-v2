@@ -26,7 +26,7 @@ const Header = () => {
                         : null}
                 </div>
                 <div className={s["Header-Logo"]}>
-                    <NavLink to="/">
+                    <NavLink to="/morgan-shop-v2/">
                         <img src={logo} alt="logo" />
                     </NavLink>
                 </div>
