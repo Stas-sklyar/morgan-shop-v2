@@ -20,10 +20,10 @@ const Routes = () => {
 
     return (
         <Switch>
-            <Route path="/morgan-shop-v2/" exact>
+            <Route path="/morgan-shop-v2/">
                 <Home />
             </Route>
-            <Route path="/table-lamps">
+            <Route path="/morgan-shop-v2/table-lamps">
                 <TableLamps />
             </Route>
             <Route path="/floor-lamps" exact>
