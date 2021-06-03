@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/morgan-shop-v2/static/css/main.bcc49b8b.chunk.css",
-    "main.js": "/morgan-shop-v2/static/js/main.d300ba27.chunk.js",
-    "main.js.map": "/morgan-shop-v2/static/js/main.d300ba27.chunk.js.map",
+    "main.css": "/morgan-shop-v2/static/css/main.5ce4881b.chunk.css",
+    "main.js": "/morgan-shop-v2/static/js/main.18ce484f.chunk.js",
+    "main.js.map": "/morgan-shop-v2/static/js/main.18ce484f.chunk.js.map",
     "runtime-main.js": "/morgan-shop-v2/static/js/runtime-main.1ee5697d.js",
     "runtime-main.js.map": "/morgan-shop-v2/static/js/runtime-main.1ee5697d.js.map",
     "static/css/2.e8c58b8f.chunk.css": "/morgan-shop-v2/static/css/2.e8c58b8f.chunk.css",
-    "static/js/2.a6d2db4f.chunk.js": "/morgan-shop-v2/static/js/2.a6d2db4f.chunk.js",
-    "static/js/2.a6d2db4f.chunk.js.map": "/morgan-shop-v2/static/js/2.a6d2db4f.chunk.js.map",
+    "static/js/2.557e76aa.chunk.js": "/morgan-shop-v2/static/js/2.557e76aa.chunk.js",
+    "static/js/2.557e76aa.chunk.js.map": "/morgan-shop-v2/static/js/2.557e76aa.chunk.js.map",
     "index.html": "/morgan-shop-v2/index.html",
     "static/css/2.e8c58b8f.chunk.css.map": "/morgan-shop-v2/static/css/2.e8c58b8f.chunk.css.map",
-    "static/css/main.bcc49b8b.chunk.css.map": "/morgan-shop-v2/static/css/main.bcc49b8b.chunk.css.map",
-    "static/js/2.a6d2db4f.chunk.js.LICENSE.txt": "/morgan-shop-v2/static/js/2.a6d2db4f.chunk.js.LICENSE.txt",
+    "static/css/main.5ce4881b.chunk.css.map": "/morgan-shop-v2/static/css/main.5ce4881b.chunk.css.map",
+    "static/js/2.557e76aa.chunk.js.LICENSE.txt": "/morgan-shop-v2/static/js/2.557e76aa.chunk.js.LICENSE.txt",
     "static/media/burger-icon.0da4b24a.svg": "/morgan-shop-v2/static/media/burger-icon.0da4b24a.svg",
     "static/media/close-menu-icon.b8dc84ef.svg": "/morgan-shop-v2/static/media/close-menu-icon.b8dc84ef.svg",
     "static/media/delete-product-icon.4cd3339a.svg": "/morgan-shop-v2/static/media/delete-product-icon.4cd3339a.svg",
@@ -27,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.1ee5697d.js",
     "static/css/2.e8c58b8f.chunk.css",
-    "static/js/2.a6d2db4f.chunk.js",
-    "static/css/main.bcc49b8b.chunk.css",
-    "static/js/main.d300ba27.chunk.js"
+    "static/js/2.557e76aa.chunk.js",
+    "static/css/main.5ce4881b.chunk.css",
+    "static/js/main.18ce484f.chunk.js"
   ]
 }
