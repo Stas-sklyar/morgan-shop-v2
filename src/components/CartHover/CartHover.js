@@ -1,6 +1,8 @@
 import React from "react"
 import { connect } from "react-redux"
 import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
+
 
 import s from "./CartHover.module.scss"
 
@@ -13,7 +15,7 @@ const CartHover = ({ productsInCart }) => {
                 {productsInCart &&
                     productsInCart.map(({ id, categoryId, name, alias, price, image, timeStamp }) => {
                         return (
-                            <div key={id} className={s["CartHover-Item"]}>
+                            <Link to={"/product/" + id} key={id} className={s["CartHover-Item"]}>
 
                                 <img className={s["CartHover-Img"]} src={host + image} alt="poduct" />
                                 <div className={s["CartHover-ProductInfo"]}>
@@ -24,7 +26,7 @@ const CartHover = ({ productsInCart }) => {
                                     </span>
                                 </div>
 
-                            </div>
+                            </Link>
                         )
                     })
 

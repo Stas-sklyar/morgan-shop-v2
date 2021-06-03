@@ -37,7 +37,14 @@
     &-Item {
         display: flex;
         margin-bottom: 10px;
+        text-decoration: none;
+        color: #121212;
 
+        &:hover {
+            .CartHover-Name {
+                text-decoration: underline;
+            }
+        }
     }
 
     &-ProductInfo {

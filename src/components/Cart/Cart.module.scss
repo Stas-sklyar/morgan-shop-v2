@@ -76,21 +76,15 @@
     }
 
     &-Name {
-        font-size: 12px;
-        line-height: 22px;
-        letter-spacing: 0.01em;
-        color: #6D6D6D;
-
-        @media screen and (max-width: 500px) {
-            font-size: 10px;
-            line-height: 16px;
-        }
-    }
-
-    &-Category {
         font-size: 18px;
         line-height: 27px;  
         color: #121212;
+        letter-spacing: 0.01em;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
 
         @media screen and (max-width: 500px) {
             font-size: 10px;

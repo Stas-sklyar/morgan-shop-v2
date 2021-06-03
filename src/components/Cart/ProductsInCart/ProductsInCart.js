@@ -1,6 +1,7 @@
 import React from "react"
 import { connect, useDispatch } from "react-redux"
 import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { removeProductInCart } from "../../../actions/actions"
 
 import s from "../Cart.module.scss"
@@ -30,8 +31,9 @@ const ProductInCart = ({ productsInCart }) => {
                                 <div className={s["ProductInCart-Info"]}>
 
                                     <div className={s["ProductInCart-Text"]}>
-                                        <span className={s["ProductInCart-Name"]}>{name}</span>
-                                        <span className={s["ProductInCart-Category"]}>{alias}</span>
+                                        <Link to={"/product/" + id} className={s["ProductInCart-Name"]}>
+                                            {name}
+                                        </Link>
                                         <img data-prod-id={id} src={deleteProductIcon} onClick={removeProductWithCart}
                                             className={s["ProductInCart-RemoveProductIcon"]} alt="icon" />
                                     </div>
