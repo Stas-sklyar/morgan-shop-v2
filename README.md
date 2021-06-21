@@ -24,6 +24,8 @@
   
   • Redux
   
+  • Redux-thunk
+  
   • api-rest
   
 
