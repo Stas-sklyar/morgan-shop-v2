@@ -3,19 +3,30 @@
 # Online store
 
 ## Pages: 
+
   • Main Page
+  
   • Page Login + Registration
+  
   • 404 page + forgot password page
+  
   • Product page
+  
   • Cart page + Search page
+  
   • Сategory pages
   
   
   
 ## Technologies used:
+
   • React
+  
   • Redux
-  • API
+  
+  • api-rest
+  
+
 
 ![Screenshot_3](https://user-images.githubusercontent.com/61268997/122746594-d5dcaf00-d292-11eb-86c3-26d5dd4f06f5.png)
 
